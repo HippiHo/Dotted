@@ -19,11 +19,12 @@ p {
 
 .container {
   margin: 2rem;
-  width: 50rem;
-  height: 20rem;
+  width: 50vw;
+  height: 20vw;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  align-self: center;
   align-items: center;
 }
 

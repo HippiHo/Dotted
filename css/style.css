@@ -1,0 +1,80 @@
+
+
+body {
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p {
+  text-align: center;
+  font-family: 'Dosis', Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+/* TODO: needs to be centered */
+
+.container {
+  margin: 2rem;
+  width: 50rem;
+  height: 20rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.circle {
+  width: 6rem;
+  height: 6rem;
+  border: dotted 3px white;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.circle_1 {
+  border-color: green;
+  width: 7rem;
+  height: 7rem;
+}
+
+.circle_2 {
+  border-color: orange;
+  width: 3rem;
+  height: 3rem;
+}
+
+.circle_3 {
+  width: 11rem;
+  height: 11rem;
+}
+
+.circle_4 {
+  border-color: yellow;
+  width: 4rem;
+  height: 4rem;
+}
+
+.circle_5 {
+  border-color: blue;
+  width: 8rem;
+  height: 8rem;
+}
+
+/* TODO: Slowing the hover effect*/
+
+.circle_1:active, .circle_3:active, .circle_5:active  {
+  align-self: flex-start;
+  transform: rotate(45deg) scale(1.2);
+}
+
+.circle_2:active, .circle_4:active {
+  align-self: flex-end;
+  transform: rotate(45deg) scale(1.5);
+}
